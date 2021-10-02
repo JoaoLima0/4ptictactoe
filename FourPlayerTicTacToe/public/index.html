@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>4 player Tic Tac Toe</title>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    PLACEHOLDER
+  </script>
+
+  <script src="/socket.io/socket.io.js">
+    PLACEHOLDER
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="title">4pTTT</div>
+    <hr class="hr">
+    <div class="sidebar-winners" hidden>
+      <div class="sidebar-player">
+        <div class="player winners">Winners:</div>
+      </div>
+      <div class="sidebar-player sidebar-winner sw0">
+        <div class="player winner w0"></div>
+      </div>
+      <div class="sidebar-player sidebar-winner sw1">
+        <div class="player winner w1"></div>
+      </div>
+      <div class="sidebar-player sidebar-winner sw2">
+        <div class="player winner w2"></div>
+      </div>
+      <div class="sidebar-player sidebar-player sw3">
+        <div class="player winner w3"></div>
+      </div>
+      <div class="margin-to-hr"></div>
+      <hr class="hr">
+    </div>
+    <div class="sidebar-player sp0">
+      <div class="player-arrow pa0" hidden></div>
+      <div class="player p0">Player 0 - 0pts</div>
+    </div>
+    <div class="sidebar-player sp1">
+      <div class="player-arrow pa1" hidden></div>
+      <div class="player p1">Player 1 - 0pts</div>
+    </div>
+    <div class="sidebar-player sp2">
+      <div class="player-arrow pa2" hidden></div>
+      <div class="player p2">Player 2 - 0pts</div>
+    </div>
+    <div class="sidebar-player sp3">
+      <div class="player-arrow pa3" hidden></div>
+      <div class="player p3">Player 3 - 0pts</div>
+    </div>
+    <div class="new-game-button-div" hidden>
+      <button class="new-game-button">New Game</button>
+    </div>
+  </div>
+
+  <div class="board">
+    <div class="row row-top">
+      <div class="square" id="b0">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b1">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b2">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b3">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b4">
+        <div class="square-text"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="square" id="b5">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b6">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b7">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b8">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b9">
+        <div class="square-text"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="square" id="b10">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b11">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b12">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b13">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b14">
+        <div class="square-text"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="square" id="b15">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b16">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b17">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b18">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b19">
+        <div class="square-text"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="square" id="b20">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b21">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b22">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b23">
+        <div class="square-text"></div>
+      </div>
+      <div class="square" id="b24">
+        <div class="square-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="waiting"></div>
+
+  <div class="inputArea">
+    <div class="inputBG"></div>
+    <div class="inputDiv">
+      <div class="inputPart inputName">
+        <label for="name">Name: </label>
+        <input type="text" name="name" onchange="updateInputPreview()">
+      </div>
+      <div class="inputPart inputColor">
+        <label for="color">Color: </label>
+        <input type="text" name="color" onchange="updateInputPreview()">
+      </div>
+      <div class="inputPart inputChar">
+        <label for="char">Char: </label>
+        <input type="text" name="char" maxlength="1" onchange="updateInputPreview()">
+      </div>
+      <div class="inputPreview">
+        <span>Preview: </span>
+        <span class="previewSpan">Player 1 - X</span>
+      </div>
+      <button id="enterGame">Enter game</button>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="4playerTicTacToe.js">
+    PLACEHOLDER
+  </script>
+
+  <script>
+    $(".sidebar").height($(window).height());
+  </script>
+
+</body>
+
+</html>

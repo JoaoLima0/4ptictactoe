@@ -1,0 +1,190 @@
+body {
+  background-color: #F0A500; /*grey*/
+  margin: 0;
+  padding: 0;
+}
+
+/*
+
+Color pallete:
+- #FFEFA0
+- #FFD57E
+- #FCA652
+- #AC4B1C
+
+- #F4F4F4
+- #F0A500
+- #CF7500
+- #1A1C20
+
+*/
+
+.board {
+  height: 750px;
+  width: 750px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.row {
+  height: 144px;
+  width: 750px;
+  margin-top: 5px;
+}
+
+.row-top {
+  margin-top: 5px;
+}
+
+.square {
+  background-color: #FFE08E;
+  height: 140px;
+  width: 140px;
+  float: left;
+  margin-left: 5px;
+  border: 2px black outset;
+  border-radius: 8%;
+}
+
+.square:hover {
+  background-color: #FBD78A; /* #DADADA; */
+}
+
+.square-text {
+  margin-top: 30px;
+  font-size: 70px;
+  text-align: center;
+  color: #222222;
+}
+
+.result {
+  background-color: yellow;
+}
+
+.sidebar {
+  /* background-color: #555555; */
+  background-color: #CF7500;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: absolute;
+  top: -5px;
+  color: #1A1C20;
+}
+
+.sidebar hr {
+  border-color: #1A1C20;
+}
+
+.title {
+  font-size: 70px;
+  float: right;
+  margin: 20px 40px 10px 0px;
+}
+
+.hr {
+  width: 75%;
+}
+
+.sidebar-player {
+  float: right;
+  margin: 5px 25px 5px 0px;
+  width: 250px;
+}
+
+.player {
+  float: right;
+  font-size: 28px;
+}
+
+.player span {
+  text-shadow: 1px 1px 1px #1A1C20;
+}
+
+.player-arrow {
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 25px solid #F0A500;
+  position: relative;
+  top: 7px;
+  right: -10px;
+}
+
+.margin-to-hr {
+  float: right;
+  height: 12px;
+  width: 250px;
+}
+
+.waiting {
+  width: auto;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.waiting span {
+  text-shadow: 1px 1px 1px #1A1C20;
+}
+
+.new-game-button-div {
+  float: right;
+  margin: 15px auto;
+  height: 30px;
+  width: 100%;
+}
+
+.new-game-button {
+  clear: both;
+  margin: 0px 23%;
+  width: 50%;
+  height: 100%;
+  border: #F0A500 outset;
+  border-radius: 30%;
+  background-color: #FCA652; /* #BBBBBB; */
+  color: #1A1C20;
+}
+
+
+/*INPUTAREA CODE*/
+
+.inputArea {
+  /* background-color: #FFEFA0; */
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  /* opacity: 0.7; */
+}
+
+.inputBG {
+  background-color: #FFEFA0;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  opacity: 0.7;
+}
+
+.inputDiv {
+  margin: auto;
+  float: left;
+  font-size: 50px;
+  opacity: 0.95;
+}
+
+.inputDiv input {
+  margin-top: 0;
+  position: relative;
+  top: -10px;
+  font-size: 30px;
+}
+
+.inputDiv button {
+  font-size: 30px;
+  width: 100%;
+}
